@@ -1,0 +1,91 @@
+
+Commands
+Dev
+yum install git -y
+    yum update -y
+   91  mkdir /data
+     cd /data/
+     git init
+   yum install git -y
+   yum update git -y
+   mkdir /data
+  cd /data/
+git init
+pwd
+mkdir /data1
+cd /data1/
+git init
+pwd
+ls -a
+cd
+ssh-keygen
+cd .ssh
+cat id_rsa.pub
+    cd /data/
+vim index.html
+yum install git -y
+git update -y
+
+ 
+
+ 
+
+Jenkins
+free -h
+cat /proc
+cat /proc/meminfo
+java -version
+      dnf install java-17-amazon-corretto -y
+    java -version
+       wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+      rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+      dnf install jenkins -y
+     systemctl enable jenkins
+      systemctl start jenkins
+  /var/lib/jenkins/secrets/initialAdminPassword
+    cat /var/lib/jenkins/secrets/initialAdminPassword
+yum install git -y
+yum update -y
+webhooks- generate tokan from configure > jenkins
+
+ 
+
+jenkins > new item > freestyle project > > add git url > change settings >
+
+ 
+
+   add webhook in repository
+    url of jenkins:8080/github-webhook/                                                                                                                                                                                                                               go in jenkins--config--generate token--then add webhook on github repository                                                                                                                                                                                      then go on jenkins --new item--name it-- freestyle project--add git url --branch main--buid triggers--save and apply--build now
+
+
+
+    now install maven in jenkins
+
+      1  mkdir opt
+    2  cd /opt/
+    4  wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz4  wget https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.tar.gz
+    5  tar xzvf apache-maven-3.9.9-bin.tar.g
+    7  mv apache-maven-3.9.9 maven
+    9  cd ./maven
+   10  ls
+   11  yum install maven
+   13  mvn -v
+    go to jenkins--manage jenkins--available plugins--maven--install it
+
+    now adding file in our repository
+       git remote -v
+   17  git clone https://github.com/adinathmahangareLTI/jenkins-maven /cloned-project
+   18  pwd
+   19  cd /cloned-project
+   20  ls
+   21  git remote -v
+   22  git remote remove origin
+   23  git remote add origin git@github.com:Satakshi3/coderepo.git
+   24  git remote -v
+   25  git push origin main
+
+
+   now go into jenkins - manage jenkins--tools--add jdk--use runtime url --then add maven use home url--apply--save--build now--console output--copy url of building workplace---
+
+
+   if you don't find url use mvn -v in maven directory
